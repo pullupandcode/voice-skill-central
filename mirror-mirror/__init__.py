@@ -13,3 +13,6 @@ class ComplimentMeSkill(MycroftSkill):
         ]
 
         self.redis_client.publish('notification', compliment_list[0])
+
+def create_skill():
+    return ComplimentMeSkill()
